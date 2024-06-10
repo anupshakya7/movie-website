@@ -1,0 +1,12 @@
+a{
+    text-decoration: none !important;
+}
+.card{
+    transition: 0.5s;
+    padding: 5px;
+}
+.card:hover{
+    background-color: rgb(36, 37, 37);
+    color: #fff;
+    transform: scale(1.04);
+}

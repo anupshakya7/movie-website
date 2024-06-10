@@ -3,6 +3,9 @@ import Home from "./Components/Home";
 import SingleMovie from "./Components/SingleMovie";
 import Error from "./Components/Error";
 import { Routes, Route } from "react-router-dom";
+import Movies from "./Components/Movies";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js'
 
 function App() {
   return (
