@@ -3,7 +3,7 @@
 // Consumer / useContext hooks (you)
 import React, { useContext, useEffect, useState } from "react";
 
-const API_URL = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}`;
+export const API_URL = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}`;
 
 const AppContext = React.createContext();
 
@@ -40,7 +40,6 @@ const AppProvider = ({ children }) => {
   useEffect(()=>{
     var timerOut = setTimeout(()=>{
       getMovies(`${API_URL}&s=${query}`);
-      console.log('response test');
     },1000);
     
     return ()=> clearTimeout(timerOut);
