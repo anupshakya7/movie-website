@@ -1,6 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../Context/context";
-
+//this is the test message
 const Search = () => {
   const { query, setQuery, isError } = useGlobalContext();
 
